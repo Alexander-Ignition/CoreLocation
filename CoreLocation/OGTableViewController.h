@@ -25,4 +25,9 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *timestampLable;
 
+@property (weak, nonatomic) IBOutlet UILabel *magneticHeadingLable;
+@property (weak, nonatomic) IBOutlet UILabel *trueHeadingLable;
+@property (weak, nonatomic) IBOutlet UILabel *headingAccuracyLable;
+@property (weak, nonatomic) IBOutlet UILabel *timestampHeadingLable;
+
 @end

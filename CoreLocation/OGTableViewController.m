@@ -25,19 +25,8 @@
     [super viewDidLoad];
     self.locationManager = [CLLocationManager new];
     self.locationManager.delegate = self;
+    [self.locationManager startUpdatingHeading];
     [self.locationManager startUpdatingLocation];
-    NSLog(@"%s %@", __PRETTY_FUNCTION__, self.locationManager.location);
-}
-
--(void)dealloc
-{
-    self.locationManager.delegate = nil;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -56,6 +45,14 @@
     self.speedLable.text  = [NSString stringWithFormat:@"%f", newLocation.speed];
     
     self.timestampLable.text = [NSString stringWithFormat:@"%@", newLocation.timestamp];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
+{
+    self.magneticHeadingLable.text  = [NSString stringWithFormat:@"%f", newHeading.magneticHeading];
+    self.trueHeadingLable.text      = [NSString stringWithFormat:@"%f", newHeading.trueHeading];
+    self.headingAccuracyLable.text  = [NSString stringWithFormat:@"%f", newHeading.headingAccuracy];
+    self.timestampHeadingLable.text = [NSString stringWithFormat:@"%@", newHeading.timestamp];
 }
 
 @end
