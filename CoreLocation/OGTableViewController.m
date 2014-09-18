@@ -55,6 +55,8 @@
     self.headingAccuracyLable.text  = [NSString stringWithFormat:@"%f", newHeading.headingAccuracy];
     self.timestampHeadingLable.text = [NSString stringWithFormat:@"%@", newHeading.timestamp];
     
+    // test
+    
     // Convert Degree to Radian and move the needle
 	float oldRad =  -self.locationManager.heading.trueHeading * M_PI / 180.0f;
 	float newRad =  -newHeading.trueHeading * M_PI / 180.0f;
