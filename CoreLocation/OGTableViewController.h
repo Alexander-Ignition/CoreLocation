@@ -29,5 +29,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *trueHeadingLable;
 @property (weak, nonatomic) IBOutlet UILabel *headingAccuracyLable;
 @property (weak, nonatomic) IBOutlet UILabel *timestampHeadingLable;
+@property (weak, nonatomic) IBOutlet UIView *markerImageView;
 
 @end

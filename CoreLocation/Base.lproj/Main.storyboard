@@ -305,6 +305,32 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Compas" id="15C-tf-etK">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="247" id="7pv-0H-as7">
+                                        <rect key="frame" x="0.0" y="955" width="320" height="247"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7pv-0H-as7" id="LYX-HP-v9R">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="246"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marker.png" translatesAutoresizingMaskIntoConstraints="NO" id="kyi-jD-b7p">
+                                                    <rect key="frame" x="85" y="48" width="150" height="150"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="r4x-ae-JAg"/>
+                                                        <constraint firstAttribute="width" constant="150" id="xbU-i6-AdM"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="kyi-jD-b7p" secondAttribute="centerX" id="2ib-Gv-WVI"/>
+                                                <constraint firstAttribute="centerY" secondItem="kyi-jD-b7p" secondAttribute="centerY" id="GWF-sm-Sg8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="ZkF-rH-VbO" id="yav-5Z-HeX"/>
@@ -320,6 +346,7 @@
                         <outlet property="latitudeLable" destination="kWs-Ek-PbF" id="aDA-6w-PxF"/>
                         <outlet property="longitudeLable" destination="z4Z-8k-fcD" id="aLI-Bq-qBM"/>
                         <outlet property="magneticHeadingLable" destination="oZX-Mn-eZc" id="Lir-oj-gnh"/>
+                        <outlet property="markerImageView" destination="LYX-HP-v9R" id="EbU-2v-rcO"/>
                         <outlet property="speedLable" destination="EBT-aE-0S6" id="Dq8-0H-1d4"/>
                         <outlet property="timestampHeadingLable" destination="BZV-Mo-IdA" id="gvL-YB-Vgf"/>
                         <outlet property="timestampLable" destination="cxa-GR-Ahz" id="5f2-dz-AEo"/>
@@ -347,6 +374,9 @@
             <point key="canvasLocation" x="-371" y="-211"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="marker.png" width="159" height="157"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
