@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>22A5BE73-CCD6-4481-BD72-A33A39035182</string>
+	<string>40F220B4-2652-4811-81EC-49C94EB202DA</string>
 	<key>IDESourceControlProjectName</key>
 	<string>CoreLocation</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>82D1E88B-900F-4641-9C48-9EA7B9BBEC39</key>
+		<key>81D9DF6E2D272DE9AA62A01DA149785655BF2F7D</key>
 		<string>https://github.com/Alexander-Ignition/CoreLocation.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CoreLocation.xcodeproj/project.xcworkspace</string>
+	<string>CoreLocation.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>82D1E88B-900F-4641-9C48-9EA7B9BBEC39</key>
+		<key>81D9DF6E2D272DE9AA62A01DA149785655BF2F7D</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Alexander-Ignition/CoreLocation.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>82D1E88B-900F-4641-9C48-9EA7B9BBEC39</string>
+	<string>81D9DF6E2D272DE9AA62A01DA149785655BF2F7D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>82D1E88B-900F-4641-9C48-9EA7B9BBEC39</string>
+			<string>81D9DF6E2D272DE9AA62A01DA149785655BF2F7D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CoreLocation</string>
 		</dict>

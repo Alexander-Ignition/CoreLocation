@@ -26,12 +26,24 @@
     [super viewDidLoad];
     self.locationManager = [CLLocationManager new];
     self.locationManager.delegate = self;
+    
+    CLAuthorizationStatus аuthorizationStatus = [CLLocationManager authorizationStatus];
+    if (аuthorizationStatus == kCLAuthorizationStatusNotDetermined) {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
+    
     [self.locationManager startUpdatingHeading];
-    [self.locationManager startUpdatingLocation];
 }
 
 
 #pragma mark - CLLocationManagerDelegate
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+{
+    if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+        [self.locationManager startUpdatingLocation];
+    }
+}
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
